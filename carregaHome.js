@@ -19,10 +19,11 @@ window.addEventListener("load", async function(){
         botaorecentes.classList.add("botao-recentes")
 
         const imagem = this.document.createElement("img")
-        imagem.setAttribute("src", json.result[1].imagem)
+        imagem.setAttribute("src", json.result[i].imagem)
+        imagem.classList.add("img-recentes")
         const divrecente  = this.document.createElement("div")
         divrecente.classList.add("recentes")
-        divrecente.append(imagem)
+        botaorecentes.append(imagem)
         divrecente.append(botaorecentes,h1, saibamais)
         container.append(divrecente)
     }

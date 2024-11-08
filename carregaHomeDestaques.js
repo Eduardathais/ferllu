@@ -23,6 +23,7 @@ window.addEventListener("load", async function(){
 
         const img = this.document.createElement("img")
         img.setAttribute("src", json.result[i].imagem)
+        img.classList.add("img-destaques")
 
         const divdestaques  = this.document.createElement("div")
         divdestaques.classList.add("destaques")
